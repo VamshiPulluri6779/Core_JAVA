@@ -33,12 +33,8 @@ The repository is organized into the following sections:
    - Differences Between `ArrayList`, `LinkedList`, and `Vector`
    - HashMap Internal Working
    - Concurrent Collections
-
-7. **File I/O and Serialization**
-   - Reading and Writing Files
-   - Serialization and Deserialization
-
-8. **Java 8+ Features**
+     
+7. **Java 8+ Features**
    - Streams API
    - Optional Class
    - New Date and Time API
@@ -47,4 +43,4 @@ The repository is organized into the following sections:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/java-core-concepts.git
+   https://github.com/VamshiPulluri6779/Core_JAVA.git
