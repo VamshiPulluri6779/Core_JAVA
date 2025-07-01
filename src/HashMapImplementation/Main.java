@@ -29,5 +29,7 @@ public class Main {
 
         System.out.println(hashMap.get(9));
         System.out.println(hashMap.size);
+
+        System.out.println(hashMap.get(100)); // This will throw NoSuchKeyFoundException
     }
 }
