@@ -12,9 +12,9 @@ public class SafeVarargsClass {
         Object[] list = lists;
 
         List<String> newList = new ArrayList<>();
-        newList.add("Hello");
+        newList.add("Hello"); // This is unsafe, but we are ignoring the warning with @SafeVarargs
 
-        list[0] = newList;
+        list[0] = newList; // This will cause heap pollution warning, but we are ignoring it
     }
 
     public static void main(String[] args) {
