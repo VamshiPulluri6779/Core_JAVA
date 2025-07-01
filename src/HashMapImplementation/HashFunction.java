@@ -21,6 +21,25 @@ public class HashFunction {
         BigInteger hashNumber = new BigInteger(1, hashBytes);
         // Return only the numeric part of the hash
         return new BigInteger(hashNumber.toString().replaceAll("\\D", ""));
+
+        /*
+        Below can also be used as hash function
+
+            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+
+            byte[] bytes = messageDigest.digest("Hello World".getBytes());
+
+            // Convert byte array to hexadecimal string
+            StringBuilder hexString = new StringBuilder();
+            for (byte b : bytes) {
+                hexString.append(String.format("%02x", b));
+                }
+
+            BigInteger hashNumber = new BigInteger(hexString.toString().replaceAll("\\D", ""), 16);
+
+            System.out.println(hashNumber);
+
+        */
     }
 
     public static HashFunction getInstance(){
