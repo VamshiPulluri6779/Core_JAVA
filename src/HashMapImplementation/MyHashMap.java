@@ -82,7 +82,7 @@ public class MyHashMap<K,V> {
         return this.nodes.length;
     }
 
-    public Node<K,V> getNode(int index){
-        return this.nodes[index];
+    public List<Pair<K,V>> entrySet() {
+        return this.entrySet;
     }
 }
