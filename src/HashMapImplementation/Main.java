@@ -23,9 +23,8 @@ public class Main {
         hashMap.put(15, "collection");
         hashMap.put(16, "map");
 
-        for(int i=0; i< hashMap.size(); i++){
-            if(hashMap.getNode(i) != null)
-                System.out.println("index "+ i + " : " + hashMap.getNode(i).toString());
+        for(Pair<Integer, String> item : hashMap.entrySet()) {
+            System.out.println("Key: " + item.getKey() + ", Value: " + item.getValue());
         }
 
         System.out.println(hashMap.get(9));
