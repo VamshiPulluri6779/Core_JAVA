@@ -19,7 +19,7 @@ public class MyHashMap<K,V> {
     }
 
     public MyHashMap(int size, float loadFactor){
-        this.size = size;
+        this.size = BigInteger.valueOf(size).intValue();
         this.loadFactor = loadFactor;
     }
 
@@ -79,7 +79,7 @@ public class MyHashMap<K,V> {
     }
 
     public int size(){
-        return this.nodes.length;
+        return counter;
     }
 
     public List<Pair<K,V>> entrySet() {
